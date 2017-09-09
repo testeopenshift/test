@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration debug="false"
+	xmlns:log4j='http://jakarta.apache.org/log4j/'>
+ 
+	<appender name="mobapps_log" class="org.apache.log4j.ext.TZDailyRollingFileAppender">
+        <param name="append" value="true" />
+        <param name="file" value="${MOB_APPS_LOGS_DIR}/mobapps.log" />
+        <param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<param name="timeZone" value="Europe/Lisbon" />
+        <layout class="org.apache.log4j.EnhancedPatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy/MM/dd HH:mm:ss,SSSZ}{Europe/Lisbon} %-5p [%c{3}] %m%n" />
+        </layout>
+    </appender>
+	<appender name="log_asemana" class="org.apache.log4j.ext.TZDailyRollingFileAppender">
+        <param name="append" value="true" />
+        <param name="file" value="${MOB_APPS_LOGS_DIR}/asemana/engine.log" />
+        <param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<param name="timeZone" value="Europe/Lisbon" />
+		<layout class="org.apache.log4j.EnhancedPatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy/MM/dd HH:mm:ss,SSSZ}{Europe/Lisbon} %-5p [%c{3}] %m%n" />
+        </layout>
+    </appender>
+	<appender name="log_asa" class="org.apache.log4j.ext.TZDailyRollingFileAppender">
+        <param name="append" value="true" />
+        <param name="file" value="${MOB_APPS_LOGS_DIR}/asa-cv/engine.log" />
+        <param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<param name="timeZone" value="Europe/Lisbon" />
+        <layout class="org.apache.log4j.EnhancedPatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy/MM/dd HH:mm:ss,SSSZ}{Europe/Lisbon} %-5p [%c{3}] %m%n" />
+        </layout>
+    </appender>
+	<appender name="log_liberal" class="org.apache.log4j.ext.TZDailyRollingFileAppender">
+        <param name="append" value="true" />
+        <param name="file" value="${MOB_APPS_LOGS_DIR}/liberal/engine.log" />
+        <param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<param name="timeZone" value="Europe/Lisbon" />
+        <layout class="org.apache.log4j.EnhancedPatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy/MM/dd HH:mm:ss,SSSZ}{Europe/Lisbon} %-5p [%c{3}] %m%n" />
+        </layout>
+    </appender>
+	<appender name="log_expresso" class="org.apache.log4j.ext.TZDailyRollingFileAppender">
+        <param name="append" value="true" />
+        <param name="file" value="${MOB_APPS_LOGS_DIR}/expresso/engine.log" />
+        <param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<param name="timeZone" value="Europe/Lisbon" />
+        <layout class="org.apache.log4j.EnhancedPatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy/MM/dd HH:mm:ss,SSSZ}{Europe/Lisbon} %-5p [%c{3}] %m%n" />
+        </layout>
+    </appender>
+	<appender name="log_mediator_engine" class="org.apache.log4j.ext.TZDailyRollingFileAppender">
+        <param name="append" value="true" />
+        <param name="file" value="${MOB_APPS_LOGS_DIR}/mediator/engine.log" />
+        <param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<param name="timeZone" value="Europe/Lisbon" />
+        <layout class="org.apache.log4j.EnhancedPatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy/MM/dd HH:mm:ss,SSSZ}{Europe/Lisbon} %-5p [%c{3}] %m%n" />
+        </layout>
+    </appender>
+	<appender name="log_mediator_gateway" class="org.apache.log4j.ext.TZDailyRollingFileAppender">
+        <param name="append" value="true" />
+        <param name="file" value="${MOB_APPS_LOGS_DIR}/mediator/gateway.log" />
+        <param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<param name="timeZone" value="Europe/Lisbon" />
+        <layout class="org.apache.log4j.EnhancedPatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy/MM/dd HH:mm:ss,SSSZ}{Europe/Lisbon} %-5p [%c{3}] %m%n" />
+        </layout>
+    </appender>
+	<appender name="log_mediator_http_gateway" class="org.apache.log4j.ext.TZDailyRollingFileAppender">
+        <param name="append" value="true" />
+        <param name="file" value="${MOB_APPS_LOGS_DIR}/mediator/http/gateway.log" />
+        <param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<param name="timeZone" value="Europe/Lisbon" />
+        <layout class="org.apache.log4j.EnhancedPatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy/MM/dd HH:mm:ss,SSSZ}{Europe/Lisbon} %-5p [%c{3}] %m%n" />
+        </layout>
+    </appender>
+	<appender name="log_mediator_rest_gateway" class="org.apache.log4j.ext.TZDailyRollingFileAppender">
+        <param name="append" value="true" />
+        <param name="file" value="${MOB_APPS_LOGS_DIR}/mediator/rest/gateway.log" />
+        <param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<param name="timeZone" value="Europe/Lisbon" />
+        <layout class="org.apache.log4j.EnhancedPatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy/MM/dd HH:mm:ss,SSSZ}{Europe/Lisbon} %-5p [%c{3}] %m%n" />
+        </layout>
+    </appender>
+	
+    <appender name="log_hibernate" class="org.apache.log4j.ext.TZDailyRollingFileAppender">
+        <param name="append" value="true" />
+        <param name="file" value="${MOB_APPS_LOGS_DIR}/hibernate.log" />
+        <param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<param name="timeZone" value="Europe/Lisbon" />
+        <layout class="org.apache.log4j.EnhancedPatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy/MM/dd HH:mm:ss,SSSZ}{Europe/Lisbon} %-5p [%c{3}] %m%n" />
+        </layout>
+    </appender>
+	
+	
+	<!-- Hibernate log -->
+    <category name="org.hibernate">
+        <priority value="ALL"/>
+        <appender-ref ref="log_hibernate" />
+    </category>
+	<category name="org.hibernate" additivity="false">
+        <priority value="ALL"/>
+        <appender-ref ref="log_hibernate" />
+    </category>
+	<logger name="org.hibernate.type">
+		<level value="TRACE" />
+	</logger>
+	
+	<!-- logs for mobapp -->
+	<!-- ********************************************************
+	*	LIBERAL													*	 
+	*************************************************************-->
+	<logger name="com.cristianopires.mobapps.liberal" additivity="false" >
+		<level value="INFO" />
+		<appender-ref ref="log_liberal"/>
+	</logger>
+	<category name="com.cristianopires.mobapps.liberal.engine" additivity="false">
+        <priority value="INFO"/>
+        <appender-ref ref="log_liberal" />
+    </category>
+	<!-- ********************************************************
+	*	LIBERAL													*	 
+	*************************************************************-->
+	<logger name="com.cristianopires.mobapps.asa" additivity="false" >
+		<level value="INFO" />
+		<appender-ref ref="log_asa"/>
+	</logger>
+	<category name="com.cristianopires.mobapps.asa.engine" additivity="false">
+        <priority value="INFO"/>
+        <appender-ref ref="log_asa" />
+    </category>
+	
+	<!-- ********************************************************
+	*	ASEMANA 												*
+	*************************************************************-->
+	<!--
+	<category name="com.cristianopires.mobapps.asemana" additivity="false">
+        <priority value="INFO"/>
+        <appender-ref ref="log_asemana" />
+    </category>-->
+	<logger name="com.cristianopires.mobapps.asemana" additivity="false" >
+		<level value="INFO" />
+		<appender-ref ref="log_asemana"/>
+	</logger>
+	<category name="com.cristianopires.mobapps.asemana.config" additivity="false">
+        <priority value="INFO"/>
+        <appender-ref ref="log_asemana" />
+    </category>
+	<category name="com.cristianopires.mobapps.asemana.engine.service" additivity="false">
+        <priority value="INFO"/>
+        <appender-ref ref="log_asemana" />
+    </category>
+	<category name="com.cristianopires.mobapps.asemana.engine.dao" additivity="false">
+        <priority value="INFO"/>
+        <appender-ref ref="log_asemana" />
+    </category>	
+	
+	<!-- ********************************************************
+	*	EXPRESSO 												*
+	*************************************************************-->
+	<logger name="com.cristianopires.mobapps.expresso" additivity="false" >
+		<level value="INFO" />
+		<appender-ref ref="log_expresso"/>
+	</logger>
+	<category name="com.cristianopires.mobapps.expresso.test" additivity="false">
+		<level value="INFO" />
+		<appender-ref ref="log_expresso" />
+	</category>
+	
+	<!-- ********************************************************
+	*	MEDIATOR ENGINE	 										*
+	*************************************************************-->
+	<logger name="com.cristianopires.mobapps.med" additivity="false" >
+		<level value="INFO" />
+		<appender-ref ref="log_mediator_engine"/>
+	</logger>
+	<category name="com.cristianopires.mobapps.med.engine" additivity="false">
+		<level value="INFO" />
+		<appender-ref ref="log_mediator_engine" />
+	</category>
+	
+	<!-- ********************************************************
+	*	MEDAIATOR WEB APP										*
+	*************************************************************-->
+	<logger name="com.cristianopires.mobapps.gwt" additivity="false" >
+		<level value="INFO" />
+		<appender-ref ref="log_mediator_gateway"/>
+	</logger>
+	<category name="com.cristianopires.mobapps.gwt.rest" additivity="false">
+		<level value="INFO" />
+		<appender-ref ref="log_mediator_rest_gateway" />
+	</category>
+	<category name="com.cristianopires.mobapps.gwt.http" additivity="false">
+		<level value="INFO" />
+		<appender-ref ref="log_mediator_http_gateway" />
+	</category>
+	
+    <root>
+        <level value="INFO" />		
+        <appender-ref ref="mobapps_log" />
+    </root>
+ <!-- http://stackoverflow.com/questions/436276/configuring-hibernate-logging-using-log4j-xml-config-file -->
+</log4j:configuration>

@@ -1,0 +1,16 @@
+#!/bin/bash
+echo Hello World
+
+alias ASA='cd "$OPENSHIFT_JBOSSAS_LOG_DIR"mobapps/asa-cv'
+alias LASA='tail -100f "$OPENSHIFT_JBOSSAS_LOG_DIR"mobapps/asa-cv/engine.log'
+alias ASE='cd "$OPENSHIFT_JBOSSAS_LOG_DIR"mobapps/asemana'
+alias LASE='tail -100f "$OPENSHIFT_JBOSSAS_LOG_DIR"mobapps/asemana/engine.log'
+alias EXP='cd "$OPENSHIFT_JBOSSAS_LOG_DIR"mobapps/expresso'
+alias LEXP='tail -100f "$OPENSHIFT_JBOSSAS_LOG_DIR"mobapps/expresso'
+alias LIB='cd "$OPENSHIFT_JBOSSAS_LOG_DIR"mobapps/liberal'
+alias LLIB='tail -100f "$OPENSHIFT_JBOSSAS_LOG_DIR"mobapps/liberal/engine.log'
+alias MED='cd "$OPENSHIFT_JBOSSAS_LOG_DIR"mobapps/mediator'
+alias LMED='tail -100f "$OPENSHIFT_JBOSSAS_LOG_DIR"mobapps/mediator/engine.log'
+alias GAT='cd "$OPENSHIFT_JBOSSAS_LOG_DIR"mobapps/mediator/app'
+alias LGAT='tail -100f "$OPENSHIFT_JBOSSAS_LOG_DIR"mobapps/mediator/app/gateway.log'
+alias LOG='tail -100f "$OPENSHIFT_JBOSSAS_LOG_DIR"jbossas.log'
