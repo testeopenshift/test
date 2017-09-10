@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<module xmlns="urn:jboss:module:1.1" name="com.cristianopires.mobapps.log4j">  
+    <!--<resources>  
+        <resource-root path=""/> 
+		<resource-root path="log4j-1.2.17.jar"/>  
+    </resources>  -->
+	<resources>  
+        <resource-root path="."/>  
+		<resource-root path="log4j-ext-1.0.0.jar"/>
+    </resources>
+    <dependencies>  
+        <module name="javax.api" export="true" />
+    </dependencies>
+</module>  
