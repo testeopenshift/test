@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
-<log4j:configuration debug="false"
+<log4j:configuration debug="true"
 	xmlns:log4j='http://jakarta.apache.org/log4j/'>
  
 	<appender name="mobapps_log" class="org.apache.log4j.ext.TZDailyRollingFileAppender">
         <param name="append" value="true" />
-        <param name="file" value="${MOB_APPS_LOGS_DIR}/mobapps.log" />
+        <param name="file" value="${OPENSHIFT_LOG_DIR}mobapps/mobapps.log" />
         <param name="DatePattern" value="'.'yyyy-MM-dd" />
 		<param name="timeZone" value="Europe/Lisbon" />
         <layout class="org.apache.log4j.EnhancedPatternLayout">
@@ -14,7 +14,7 @@
     </appender>
 	<appender name="log_asemana" class="org.apache.log4j.ext.TZDailyRollingFileAppender">
         <param name="append" value="true" />
-        <param name="file" value="${MOB_APPS_LOGS_DIR}/asemana/engine.log" />
+        <param name="file" value="${OPENSHIFT_LOG_DIR}mobapps/asemana/engine.log" />
         <param name="DatePattern" value="'.'yyyy-MM-dd" />
 		<param name="timeZone" value="Europe/Lisbon" />
 		<layout class="org.apache.log4j.EnhancedPatternLayout">
@@ -23,7 +23,7 @@
     </appender>
 	<appender name="log_asa" class="org.apache.log4j.ext.TZDailyRollingFileAppender">
         <param name="append" value="true" />
-        <param name="file" value="${MOB_APPS_LOGS_DIR}/asa-cv/engine.log" />
+        <param name="file" value="${OPENSHIFT_LOG_DIR}mobapps/asa-cv/engine.log" />
         <param name="DatePattern" value="'.'yyyy-MM-dd" />
 		<param name="timeZone" value="Europe/Lisbon" />
         <layout class="org.apache.log4j.EnhancedPatternLayout">
@@ -32,7 +32,7 @@
     </appender>
 	<appender name="log_liberal" class="org.apache.log4j.ext.TZDailyRollingFileAppender">
         <param name="append" value="true" />
-        <param name="file" value="${MOB_APPS_LOGS_DIR}/liberal/engine.log" />
+        <param name="file" value="${OPENSHIFT_LOG_DIR}mobapps/liberal/engine.log" />
         <param name="DatePattern" value="'.'yyyy-MM-dd" />
 		<param name="timeZone" value="Europe/Lisbon" />
         <layout class="org.apache.log4j.EnhancedPatternLayout">
@@ -41,7 +41,7 @@
     </appender>
 	<appender name="log_expresso" class="org.apache.log4j.ext.TZDailyRollingFileAppender">
         <param name="append" value="true" />
-        <param name="file" value="${MOB_APPS_LOGS_DIR}/expresso/engine.log" />
+        <param name="file" value="${OPENSHIFT_LOG_DIR}mobapps/expresso/engine.log" />
         <param name="DatePattern" value="'.'yyyy-MM-dd" />
 		<param name="timeZone" value="Europe/Lisbon" />
         <layout class="org.apache.log4j.EnhancedPatternLayout">
@@ -50,7 +50,7 @@
     </appender>
 	<appender name="log_mediator_engine" class="org.apache.log4j.ext.TZDailyRollingFileAppender">
         <param name="append" value="true" />
-        <param name="file" value="${MOB_APPS_LOGS_DIR}/mediator/engine.log" />
+        <param name="file" value="${OPENSHIFT_LOG_DIR}mobapps/mediator/engine.log" />
         <param name="DatePattern" value="'.'yyyy-MM-dd" />
 		<param name="timeZone" value="Europe/Lisbon" />
         <layout class="org.apache.log4j.EnhancedPatternLayout">
@@ -59,7 +59,7 @@
     </appender>
 	<appender name="log_mediator_gateway" class="org.apache.log4j.ext.TZDailyRollingFileAppender">
         <param name="append" value="true" />
-        <param name="file" value="${MOB_APPS_LOGS_DIR}/mediator/gateway.log" />
+        <param name="file" value="${OPENSHIFT_LOG_DIR}mobapps/mediator/gateway.log" />
         <param name="DatePattern" value="'.'yyyy-MM-dd" />
 		<param name="timeZone" value="Europe/Lisbon" />
         <layout class="org.apache.log4j.EnhancedPatternLayout">
@@ -68,7 +68,7 @@
     </appender>
 	<appender name="log_mediator_http_gateway" class="org.apache.log4j.ext.TZDailyRollingFileAppender">
         <param name="append" value="true" />
-        <param name="file" value="${MOB_APPS_LOGS_DIR}/mediator/http/gateway.log" />
+        <param name="file" value="${OPENSHIFT_LOG_DIR}mobapps/mediator/http/gateway.log" />
         <param name="DatePattern" value="'.'yyyy-MM-dd" />
 		<param name="timeZone" value="Europe/Lisbon" />
         <layout class="org.apache.log4j.EnhancedPatternLayout">
@@ -77,7 +77,7 @@
     </appender>
 	<appender name="log_mediator_rest_gateway" class="org.apache.log4j.ext.TZDailyRollingFileAppender">
         <param name="append" value="true" />
-        <param name="file" value="${MOB_APPS_LOGS_DIR}/mediator/rest/gateway.log" />
+        <param name="file" value="${OPENSHIFT_LOG_DIR}mobapps/mediator/rest/gateway.log" />
         <param name="DatePattern" value="'.'yyyy-MM-dd" />
 		<param name="timeZone" value="Europe/Lisbon" />
         <layout class="org.apache.log4j.EnhancedPatternLayout">
@@ -87,7 +87,7 @@
 	
     <appender name="log_hibernate" class="org.apache.log4j.ext.TZDailyRollingFileAppender">
         <param name="append" value="true" />
-        <param name="file" value="${MOB_APPS_LOGS_DIR}/hibernate.log" />
+        <param name="file" value="${OPENSHIFT_LOG_DIR}mobapps/hibernate.log" />
         <param name="DatePattern" value="'.'yyyy-MM-dd" />
 		<param name="timeZone" value="Europe/Lisbon" />
         <layout class="org.apache.log4j.EnhancedPatternLayout">
